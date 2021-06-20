@@ -1,0 +1,8 @@
+
+- name: This playbooks installs httpd software
+  Hosts: all # all servers will be affected making changes to the file
+  Tasks:
+    - name: Installing httpd software
+         Yum:
+             Name: httpd
+             State: present

@@ -1,0 +1,7 @@
+- name: This playbook installs httpd server
+  hosts: all
+  tasks:
+   -  name: Installing httpd software
+      yum:
+        name: httpd
+        state: present
